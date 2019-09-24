@@ -8,4 +8,4 @@ public class TestJUnit {
       String str = "Junit is working fine";
       assertEquals("Junit is working fine", str);
    }
-}++
+}
