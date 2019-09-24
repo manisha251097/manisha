@@ -25,16 +25,25 @@
      */
     public static boolean posNeg(int a, int b, boolean negative) {
         // Your code goes here....
-        if((a>0 && b<0)|| (a<0 && b>0)){
-            return true;
-            else if(negative==true){
+        
+        if(  (a<0 && b<0) &&(negative==true))
+            {
                 return true;
-                else{
-                    return false;
-                }
+            }
+        else if((a>0 && b<0 )&& (negative==false))
+        {
+            return true;
+            }
+        else if(a<0 && b>0 && (negative==false))
+        {
+                return true;
+            }
+        else{
+            return false;
+                
             }
         }
 
         
-    }
+    
  }
