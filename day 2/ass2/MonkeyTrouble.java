@@ -26,15 +26,15 @@ public class MonkeyTrouble {
      */
     public static boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
         // Your code goes here....
-        if(aSmile==true && bSmile==true)
-        return true;
-        }else if(asmile==true && bsmile==false) {
-            return false;
+        if((aSmile==true && bSmile==true)||(aSmile==false && bSmile==false)){
+          return true;
         }else{
-            return true;
+            return false;
+        }
+
         }
 
 
 
-    }
+    
 }
