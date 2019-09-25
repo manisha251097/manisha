@@ -20,7 +20,22 @@ public class BinaryToDecimal {
      * @return the decimal number n of the binary string.
      */
     public static int binaryToDecimal(String s) {
-        
-        
+        int decimal=0;
+        char[] number=s.toCharArray();
+        int base=1;
+        int len=number.length;
+        for(int i=len-1;i>=0;i--){
+            if (number[i]=='1')
+            decimal+=base;
+            base=base*2;
+        }
+        return decimal;
     }
+    public static void main(String[] args){
+        System.out.println(binaryToDecimal("11110101010101010"));
+    }
+        
+        
+        
+    
 }
