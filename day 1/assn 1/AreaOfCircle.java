@@ -16,6 +16,8 @@ public class AreaOfCircle {
      */
     public static double areaOfCircle(double radius) {
         //  Your code goes here....
+        double area = PI*radius*radius;
+        return area;
     }
 
     /**
@@ -27,5 +29,7 @@ public class AreaOfCircle {
      */
     public static double perimeterOfCircle(double radius) {
         //  Your code goes here....
+        double perimeter=2*PI*radius;
+        return perimeter;
     }
 }

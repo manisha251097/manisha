@@ -21,8 +21,10 @@
      */
     public static double simpleInterest(double principle, double numberOfYears, double rateOfInterest) {
         //  Your code goes here....
+        double interest=(principle*rateOfInterest*numberOfYears)/100;
+        return interest;
         
         
-        return 0.0
+    
     }
  }
