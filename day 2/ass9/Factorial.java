@@ -11,11 +11,15 @@
      * @return factorial of n if n is in 1 to 20 (inclusive) and -1 otherwise.
      */
     public static long factorial(int n) {
-        for(i=1;i<=20;i++){
-            n= n * i;
-        }
-
-        }
+        if(n>=1 && n<=20){
+            long fact=1;
+            for(int i =1;i<=n;i++){
+               fact= fact * i;
+            }
+            return  fact;
+        }else if(n==0){
+            return 1;
+        }else{
 
         return -1;
     }
