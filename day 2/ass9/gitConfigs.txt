@@ -1,0 +1,2 @@
+  git config --global user.email "manishasalavadi9514@msitprogram.net"
+  git config --global user.name "manisha251097"

@@ -21,5 +21,6 @@ public class BinaryToDecimal {
      */
     public static int binaryToDecimal(String s) {
         
+        
     }
 }
