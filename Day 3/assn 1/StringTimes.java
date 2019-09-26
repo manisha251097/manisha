@@ -20,7 +20,11 @@ public class StringTimes {
      */
     public static String stringTimes(String str, int n) {
         //  Your code goes here....
-        //  
-        return "";
+        String str2= "";
+        for(int i=0;i<n;i++){
+            str2=str2+str;
+
+        }
+        return str2;
     }
 }

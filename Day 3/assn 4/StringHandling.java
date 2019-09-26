@@ -17,7 +17,10 @@ public class StringHandling {
      */
     public static String[] lower(String[] arr) {
         //  your code goes here....
+        for(int i=0;i<arr.length;i++){
+            arr[i]=arr[i].toLowerCase();
+        }
         
-        return null;
+        return arr;
     }
 }

@@ -25,7 +25,19 @@ public class FrontTimes {
      */
     public static String frontTimes(String str, int n) {
         //  Your code goes here....
+        String str2="";
+        if(str.length()>=3){
+            for(int i=0;i<n;i++){
+            str2+=str.substring(0,3);
+            }
+        }else{
+        for(int j=0;j<n;j++){
+            str2+=str;
+        }
+    }
+
+             
         
-        return "";
+        return str2;
     }
 }
