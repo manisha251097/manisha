@@ -19,6 +19,7 @@ class Contact{
         this.name= n;
         this.email= e;
         this.phoneNumber= p;
+        
     }
     /**
      * getters

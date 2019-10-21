@@ -15,7 +15,8 @@ public class Squares {
      * This method returns the array of ints that are squares of each element
      * in the input array.
      * 
-     * @param nums, the input array.
+     * @param
+     *  nums, the input array.
      * 
      * @return the array of ints that are squares of each element
      * in the input array.
