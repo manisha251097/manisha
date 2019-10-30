@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Quadratic",
+            "request": "launch",
+            "mainClass": "Quadratic",
+            "projectName": "manisha_a6f054a0"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - name",
             "request": "launch",
             "mainClass": "name",
