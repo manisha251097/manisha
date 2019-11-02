@@ -1,10 +1,10 @@
 import java.util.Arrays;
 
 class ThreeSum {
-    Integer[] array1 = new Integer[] { -30, 20, 10, 20, 30, -50, 80, -20, -10 };
+    Integer[] array1 = new Integer[] { -10, 20, 10, 20, 30, -50, 80, -20, -10 };
     int current;
 
-    public void threeS() {
+    public void threeS1() {
         Arrays.sort(array1);
         int j;
         int k;
@@ -29,8 +29,8 @@ class ThreeSum {
     }
 
     public static void main(String[] args) {
-        ThreeSum obj1 = new ThreeSum();
-        obj1.threeS();
+        ThreeSum o = new ThreeSum();
+        o.threeS1();
         ;
         // obj.display();
     }
