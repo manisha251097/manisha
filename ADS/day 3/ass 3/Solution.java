@@ -1,39 +1,33 @@
-class Solution {
-	public Team[] sort(Team[] teams) {
-		// your code goes here
-		return teams;
-	}
-}
-
-class Team implements Comparable<Team> {
-	String teamName;
-	int noOfWins;
-	int noOfLosses;
-	int noOfDraws;
-
-	Team(String name, int wins, int losses, int draws) {
-		teamName = name;
-		noOfDraws = draws;
-		noOfWins = wins;
-		noOfLosses = losses;
-	}
-
-	public intcompareTo(Team teamToCompare){
-		if(this.noOfwins > teamToCompare.wins){
-			return 1;
+class Solution{
+	// it sorts by comparing each element with the other
+	public int[] sortInsertion(int[] arr){
+		int j , temp; 
+		for (int i =1; i < arr.length; i++) { 
+			j = i - 1;
+			temp = arr[i];
+			while (j >= 0 && arr[j] > temp) {
+				arr[j + 1] = arr[j];
+				j--;
+			}
+			arr[j + 1] = temp;
 		}
-
-		if(this.noOfLosses< teamToCompare.noOfLosses){
-			return -1;
+		return arr;
 	}
-	if(this.noOfDraws< teamToCompare.noOfDraws){
-			return -1;
-	}
-	return 0;
-}
-
-	public String toString() {
-		// retrun all the attributes as a string but appending with ", "
-		return "";
+	//it compares every element and exchances if it is minimum
+	public int[] sortSelection(int[] arr){
+		for (int i = 0; i < arr.length-1; i++) {
+			int min = i;
+			for (int j = i + 1; j < arr.length; j++) {
+				if (arr[j] < arr[min]) {
+					min = j;
+				}
+			}
+				int temp = arr[min];
+				arr[min] = arr[i];
+				arr[i] = temp;
+			
+		}
+		                        
+		return arr;
 	}
 }
