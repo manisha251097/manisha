@@ -18,20 +18,6 @@ class Team implements Comparable<Team> {
 		noOfLosses = losses;
 	}
 
-	public intcompareTo(Team teamToCompare){
-		if(this.noOfwins > teamToCompare.wins){
-			return 1;
-		}
-
-		if(this.noOfLosses< teamToCompare.noOfLosses){
-			return -1;
-	}
-	if(this.noOfDraws< teamToCompare.noOfDraws){
-			return -1;
-	}
-	return 0;
-}
-
 	public String toString() {
 		// retrun all the attributes as a string but appending with ", "
 		return "";
