@@ -1,3 +1,4 @@
+
 class CommonElements {
     public static void main(String[] args) {
         int[] arr1 = new int[] { 1, 4, 8, 9, 11, 21 };

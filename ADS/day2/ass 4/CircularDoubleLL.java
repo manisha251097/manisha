@@ -1,3 +1,6 @@
+/**
+ * Creates the nodes
+ */
 class Node {
     int value;
     Node next;

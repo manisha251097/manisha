@@ -8,6 +8,7 @@ class Solution {
 			cdll.add(i);
 		}
 
+		// it connects head and tail
 		cdll.formCircle();
 		int pos = 1;
 		Node temp = cdll.head;

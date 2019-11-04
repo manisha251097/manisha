@@ -1,8 +1,8 @@
-class Solution{
+class Solution {
 	// it sorts by comparing each element with the other
-	public int[] sortInsertion(int[] arr){
-		int j , temp; 
-		for (int i =1; i < arr.length; i++) { 
+	public int[] sortInsertion(int[] arr) {
+		int j, temp;
+		for (int i = 1; i < arr.length; i++) {
 			j = i - 1;
 			temp = arr[i];
 			while (j >= 0 && arr[j] > temp) {
@@ -13,21 +13,23 @@ class Solution{
 		}
 		return arr;
 	}
-	//it compares every element and exchances if it is minimum
-	public int[] sortSelection(int[] arr){
-		for (int i = 0; i < arr.length-1; i++) {
+
+	// it compares every element with the one next to it and exchances if it is
+	// minimum
+	public int[] sortSelection(int[] arr) {
+		for (int i = 0; i < arr.length - 1; i++) {
 			int min = i;
 			for (int j = i + 1; j < arr.length; j++) {
 				if (arr[j] < arr[min]) {
 					min = j;
 				}
 			}
-				int temp = arr[min];
-				arr[min] = arr[i];
-				arr[i] = temp;
-			
+			int temp = arr[min];
+			arr[min] = arr[i];
+			arr[i] = temp;
+
 		}
-		                        
+
 		return arr;
 	}
 }

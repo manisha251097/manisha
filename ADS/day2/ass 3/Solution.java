@@ -11,10 +11,13 @@ class Solution {
 
 		for (String eachBrace : braces) {
 			if (eachBrace.equals("[") || eachBrace.equals("(") || eachBrace.equals("{")) {
+				// counts the different kinds of brackets
+				// increases size if present
+
 				stack[size++] = eachBrace;
 			} else if (size > 0) {
 				String recentBrace = stack[size - 1];
-
+				// finds if the open and closed braces are present or not
 				if (recentBrace.equals("[") && eachBrace.equals("]")) {
 					size--;
 				} else if (recentBrace.equals("(") && eachBrace.equals(")")) {
