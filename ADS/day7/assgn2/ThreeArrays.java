@@ -70,6 +70,7 @@ class ThreeArrays<Key extends Comparable<Key>> {
         obj.insert(11);
         obj.insert(13);
         obj.insert(28);
+
         obj.insert(32);
         obj.insert(91);
         obj.insert(18);
