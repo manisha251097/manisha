@@ -6,7 +6,7 @@ import java.util.NoSuchElementException;
  * 
  * @author Manisha.
  */
-public class ResizingArrayQueue<Item> implements Iterable<Item> {
+public class Queue<Item> implements Iterable<Item> {
     private Item[] q; // queue elements
     private int n; // number of elements on queue
     private int first; // index of first element of queue
@@ -15,7 +15,7 @@ public class ResizingArrayQueue<Item> implements Iterable<Item> {
     /**
      * Initializes an empty queue. Complexity:O(1).
      */
-    public ResizingArrayQueue() {
+    public Queue() {
         q = (Item[]) new Object[2];
         n = 0;
         first = 0;
