@@ -160,7 +160,7 @@ class RansomNote<Key, Value> {
 
     public static void main(String[] args) {
         RansomNote<String, Integer> st = new RansomNote<String, Integer>();
-        String[] arr = { "MSIT", "IIIT", "ADS", "203-C", "IIIT" };
+        String[] arr = { "MSIT", "IIIT", "ADS", "216-A", "IIIT" };
         for (int i = 0; i < arr.length; i++) {
             if (st.contains(arr[i])) {
                 st.put(arr[i], (st.get(arr[i]) + 1));
@@ -171,7 +171,7 @@ class RansomNote<Key, Value> {
         System.out.println(st.get("MSIT"));
         System.out.println(st.get("IIIT"));
         System.out.println(st.get("ADS"));
-        System.out.println(st.get("203-C"));
+        System.out.println(st.get("216-A"));
         System.out.println("enter the input:");
         Scanner s = new Scanner(System.in);
         String input = s.nextLine();
