@@ -1,4 +1,5 @@
-Elementary Sorts:
+
+javac *Elementary Sorts:
 
 Given an Integer array sort the array using insertion and selection sort
 
