@@ -15,6 +15,7 @@ class FurthestPair {
         double d = max - min;
         System.out.println(max);
         System.out.println(min);
+        System.out.println(d);
 
     }
 
