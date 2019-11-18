@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class FurthestPair {
-    public void Difference(double a[]) {
+    public void Difference(double a[]) { //
         double max = a[0];
         double min = a[0];
         for (int i = 0; i < a.length; i++) {

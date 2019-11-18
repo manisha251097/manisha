@@ -7,6 +7,7 @@ public class Cards implements Comparable<Cards> {
         this.suits = suits;
     }
 
+    // compares the card and numbers
     public int compareTo(Cards that) {
         if (this.suits < that.suits) {
             return -1;
@@ -24,6 +25,7 @@ public class Cards implements Comparable<Cards> {
         }
     }
 
+    // prints the required suits with number
     public String toString() {
         String s = " ";
         if (this.suits == 1) {

@@ -2,6 +2,7 @@ import java.util.*;
 import java.util.List;
 import java.util.Collections;
 
+//selecting the card
 class SelectionCard {
     public Cards[] Selection(Cards[] cards) {
         int n = cards.length;
@@ -18,9 +19,10 @@ class SelectionCard {
 
         }
         return cards;
-
     }
 
+    // main method
+    // the value and type of the card are iterated
     public static void main(String[] args) {
         int[] value = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 };
         int[] type = { 1, 2, 3, 4 };
@@ -34,6 +36,7 @@ class SelectionCard {
         }
         SelectionCard s = new SelectionCard();
         List<Cards> cardlist = Arrays.asList(card);
+        System.out.println(Arrays.toString(card));
         Collections.shuffle(cardlist);
         cardlist.toArray(card);
         System.out.println(Arrays.toString(s.Selection(card)));
