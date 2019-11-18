@@ -1,3 +1,4 @@
+
 public class CircularLinkedList {
     Node last;
     int n;
@@ -7,11 +8,6 @@ public class CircularLinkedList {
     // this.n = n;
 
     // }
-
-    public void formCircle() {
-        last.next = last;
-
-    }
 
     public int Size() {
         return n;
@@ -51,13 +47,23 @@ public class CircularLinkedList {
 
     }
 
+    public boolean isCircle() {
+        if (last.next == last) {
+            return false;
+
+        }
+        return true;
+    }
+
     public static void main(String[] args) {
         CircularLinkedList c = new CircularLinkedList();
         c.enqueue(1);
         c.enqueue(11);
         c.enqueue(12);
-
+        // System.out.println(c.isCircle());
         System.out.println(c.dequeue());
+        System.out.println(c.isCircle());
+
     }
 }
 
