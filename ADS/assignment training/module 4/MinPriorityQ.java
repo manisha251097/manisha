@@ -45,6 +45,7 @@ public class MinPriorityQ {
         }
         System.out.println(w);
         if (w == x) {
+
             System.out.println(true);
         }
     }
