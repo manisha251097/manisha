@@ -5,7 +5,7 @@ import java.util.*;
  * 
  * @author manisha
  */
-public class MinPriorityQ {
+public class Solution {
     /**
      * 
      * @param ar array
