@@ -102,6 +102,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
 
         if (!isEmpty() && keys[n - 1].compareTo(key) < 0) {
             keys[n] = key;
+
             vals[n] = val;
             n++;
         }
@@ -135,9 +136,9 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
         BinarySearchST<String, Integer> st = new BinarySearchST<String, Integer>();
         st.put("Q", 2);
         st.put("A", 3);
-        st.put("C", 6);
+        st.put("C",  6);
         st.put("G",7);
         System.out.println(Arrays.toString(st.keys));
-    }
-}
+ 
+
  
